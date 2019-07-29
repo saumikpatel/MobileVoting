@@ -22,18 +22,25 @@ public final class R {
         public static final int b2 = 2131230726;
 		public static final int et1 = 2131230724;
         public static final int et2 = 2131230725;
+		 public static final int et3 = 2131230734;
+        public static final int et4 = 2131230735;
+		public static final int b3 = 2131230736;
+        public static final int b5 = 2131230737;
+		    public static final int t1 = 2131230733;
 
     }
 
     public static final class layout {
 
         public static final int activity_main = 2130903043;
+		public static final int admin = 2130903048;
    
     }
 
     public static final class menu {
      
         public static final int main = 2131165190;
+		 public static final int admin = 2131165185;
       
     }
 
@@ -41,6 +48,7 @@ public final class R {
         public static final int action_settings = 2131034113;
         public static final int app_name = 2131034112;
         public static final int hello_world = 2131034114;
+		  public static final int title_activity_admin = 2131034115;
       
     }
 
