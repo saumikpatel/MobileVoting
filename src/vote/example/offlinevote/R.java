@@ -18,6 +18,10 @@ public final class R {
 
     public static final class id {
         public static final int action_settings = 2131230742;
+		public static final int b1 = 2131230722;
+        public static final int b2 = 2131230726;
+		public static final int et1 = 2131230724;
+        public static final int et2 = 2131230725;
 
     }
 
