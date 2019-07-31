@@ -140,6 +140,57 @@ public class MainActivity extends Activity {
         
        
     }
+	public void onStart() {
+        super.onStart();
+        Log.d(this.tag, "In the onStart() event");
+    }
+
+    public void onRestart() {
+        super.onRestart();
+        Log.d(this.tag, "In the onRestart() event");
+        try {
+            InputStreamReader isr = new InputStreamReader(openFileInput("login.txt"));
+            char[] inputBuffer1 = new char[100];
+            while (true) {
+                int charRead1 = isr.read(inputBuffer1);
+                if (charRead1 <= 0) {
+                    break;
+                }
+                this.tempss += String.copyValueOf(inputBuffer1, 0, charRead1);
+                inputBuffer1 = new char[100];
+                System.out.print("temp is " + this.tempss);
+            }
+            if (this.tempss != null) {
+                this.entryArray = this.tempss.split(",");
+            } else {
+                Toast.makeText(getBaseContext(), "File not loaded successfully!", 1).show();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void onResume() {
+        super.onResume();
+        Log.d(this.tag, "In the onResume() event");
+    }
+
+    public void onPause() {
+        super.onPause();
+        Log.d(this.tag, "In the onPause() event");
+    }
+
+    public void onStop() {
+        super.onStop();
+        Log.d(this.tag, "In the onStop() event");
+    }
+
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(this.tag, "In the onDestroy() event");
+    }
+}
+
 
    
 
