@@ -9,5 +9,6 @@
             </intent-filter>
         </activity>
          <activity android:label="@string/title_activity_admin" android:name="vote.example.offlinevote.Admin" />
+		  <activity android:label="@string/title_activity_signup" android:name="vote.example.offlinevote.Signup" />
     </application>
 </manifest>

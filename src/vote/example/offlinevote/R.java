@@ -34,6 +34,7 @@ public final class R {
 
         public static final int activity_main = 2130903043;
 		public static final int admin = 2130903048;
+		public static final int activity_signup = 2130903046;
    
     }
 
@@ -41,7 +42,7 @@ public final class R {
      
         public static final int main = 2131165190;
 		 public static final int admin = 2131165185;
-      
+       public static final int signup = 2131165195;
     }
 
     public static final class string {
@@ -49,6 +50,7 @@ public final class R {
         public static final int app_name = 2131034112;
         public static final int hello_world = 2131034114;
 		  public static final int title_activity_admin = 2131034115;
+		   public static final int title_activity_signup = 2131034126;
       
     }
 
