@@ -3,5 +3,6 @@
     <menu name="adduser">res/menu/adduser.xml</menu>
    
     <menu name="main">res/menu/main.xml</menu>
+	<menu name="admin">res/menu/admin.xml</menu>
     
 </resources>
