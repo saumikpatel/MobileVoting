@@ -810,3 +810,43 @@ public class Vote extends Activity {
                                 Vote.this.entryArray[100] = Vote.this.str;
                                 break;
                         }
+						int j = 0;
+                        while (j < Vote.this.loginArray.length) {
+                            if (Vote.this.s4.equals(Vote.this.loginArray[j + 2]) && Vote.this.s1.equals(Vote.this.loginArray[j + 1])) {
+                                Vote.this.q = Integer.parseInt(Vote.this.loginArray[j + 3]);
+                                vote = Vote.this;
+                                vote.q++;
+                                Vote.this.str = Integer.toString(Vote.this.q);
+                                Vote.this.loginArray[j + 3] = Vote.this.str;
+                            } else {
+                                j += 3;
+                            }
+                        }
+                        try {
+                            osw = new OutputStreamWriter(Vote.this.openFileOutput("vote.txt", 0));
+                            for (j = 1; j < Vote.this.entryArray.length; j++) {
+                                osw.write("," + Vote.this.entryArray[j]);
+                            }
+                            osw.flush();
+                            osw.close();
+                        } catch (IOException ioe) {
+                            ioe.printStackTrace();
+                        }
+                        try {
+                            osw = new OutputStreamWriter(Vote.this.openFileOutput("login.txt", 0));
+                            for (j = 1; j < Vote.this.loginArray.length; j++) {
+                                osw.write("," + Vote.this.loginArray[j]);
+                            }
+                            osw.flush();
+                            osw.close();
+                        } catch (IOException ioe2) {
+                            ioe2.printStackTrace();
+                        }
+                        Vote.this.startActivity(new Intent(Vote.this, End.class));
+                        Vote.this.finish();
+                    }
+                });
+            }
+        } catch (IOException e2) {
+            e2.printStackTrace();
+        }
