@@ -30,6 +30,7 @@ public final class R {
 			 public static final int l1 = 2131230723;
 			  public static final int e = 2131230727;
         public static final int e1 = 2131230720;
+		       public static final int rg1 = 2131230741;
 
     }
 
@@ -38,6 +39,7 @@ public final class R {
         public static final int activity_main = 2130903043;
 		public static final int admin = 2130903048;
 		public static final int activity_signup = 2130903046;
+		  public static final int vote = 2130903051;
 		  public static final int activity_reset_password = 2130903044;
    
     }
@@ -48,6 +50,7 @@ public final class R {
 		 public static final int admin = 2131165185;
 		  public static final int reset_password = 2131165192;
        public static final int signup = 2131165195;
+	        public static final int vote = 2131165196;
     }
 
     public static final class string {
@@ -56,6 +59,7 @@ public final class R {
         public static final int hello_world = 2131034114;
 		  public static final int title_activity_admin = 2131034115;
 		   public static final int title_activity_signup = 2131034126;
+		      public static final int title_activity_vote = 2131034116;
       public static final int title_activity_reset_password = 2131034125; 
     }
 

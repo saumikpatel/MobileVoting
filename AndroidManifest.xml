@@ -11,5 +11,6 @@
          <activity android:label="@string/title_activity_admin" android:name="vote.example.offlinevote.Admin" />
 		  <activity android:label="@string/title_activity_signup" android:name="vote.example.offlinevote.Signup" />
 		   <activity android:label="@string/title_activity_reset_password" android:name="vote.example.offlinevote.ResetPassword" />
+		       <activity android:label="@string/title_activity_vote" android:name="vote.example.offlinevote.Vote" />
     </application>
 </manifest>

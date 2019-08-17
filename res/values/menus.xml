@@ -6,5 +6,6 @@
 	<menu name="admin">res/menu/admin.xml</menu>
 	    <menu name="signup">res/menu/signup.xml</menu>
 		  <menu name="resetuser">res/menu/resetuser.xml</menu>
+		   <menu name="vote">res/menu/vote.xml</menu>
     
 </resources>
