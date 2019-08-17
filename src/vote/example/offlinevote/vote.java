@@ -110,3 +110,18 @@ public class Vote extends Activity {
                 } else {
                     Toast.makeText(getBaseContext(), "File not loaded successfully!", 1).show();
                 }
+				b = getIntent().getExtras();
+                this.s1 = b.getString("login");
+                this.s4 = b.getString("adhar");
+                this.z = Integer.parseInt(this.n);
+                this.rb = new RadioButton[this.z];
+                this.i1 = 0;
+                while (this.i1 < this.z) {
+                    this.rb[this.i1] = new RadioButton(this);
+                    this.rb[this.i1].setId(this.i1);
+                    this.rb[this.i1].setText(this.partyArray[this.i1 + 1]);
+                    this.rb[this.i1].setPadding(20, 20, 20, 20);
+                    this.rg1.addView(this.rb[this.i1]);
+                    this.rb[this.i1] = (RadioButton) findViewById(this.rb[this.i1].getId());
+                    this.i1++;
+                }
