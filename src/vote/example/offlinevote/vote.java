@@ -850,3 +850,61 @@ public class Vote extends Activity {
         } catch (IOException e2) {
             e2.printStackTrace();
         }
+		 try {
+            isr = new InputStreamReader(openFileInput("vote.txt"));
+            inputBuffer = new char[100];
+            while (true) {
+                charRead = isr.read(inputBuffer);
+                if (charRead <= 0) {
+                    break;
+                }
+                this.temp += String.copyValueOf(inputBuffer, 0, charRead);
+                inputBuffer = new char[100];
+                System.out.print("temp is " + this.temp);
+            }
+            if (this.temp == null) {
+                Toast.makeText(getBaseContext(), "File not loaded successfully!", 1).show();
+            } else {
+                this.entryArray = this.temp.split(",");
+            }
+        } catch (IOException e22) {
+            e22.printStackTrace();
+        }
+        try {
+            isr1 = new InputStreamReader(openFileInput("login.txt"));
+            inputBuffer1 = new char[100];
+            while (true) {
+                charRead1 = isr1.read(inputBuffer1);
+                if (charRead1 <= 0) {
+                    break;
+                }
+                this.s += String.copyValueOf(inputBuffer1, 0, charRead1);
+                inputBuffer1 = new char[100];
+                System.out.print("temp is " + this.s);
+            }
+            if (this.s == null) {
+                Toast.makeText(getBaseContext(), "File not loaded successfully!", 1).show();
+            } else {
+                this.loginArray = this.s.split(",");
+            }
+        } catch (IOException e222) {
+            e222.printStackTrace();
+        }
+        b = getIntent().getExtras();
+        this.s1 = b.getString("login");
+        this.s4 = b.getString("adhar");
+        this.z = Integer.parseInt(this.n);
+        this.rb = new RadioButton[this.z];
+        this.i1 = 0;
+        while (this.i1 < this.z) {
+            this.rb[this.i1] = new RadioButton(this);
+            this.rb[this.i1].setId(this.i1);
+            this.rb[this.i1].setText(this.partyArray[this.i1 + 1]);
+            this.rb[this.i1].setPadding(20, 20, 20, 20);
+            this.rg1.addView(this.rb[this.i1]);
+            this.rb[this.i1] = (RadioButton) findViewById(this.rb[this.i1].getId());
+            this.i1++;
+        }
+        this.rg1.setOnCheckedChangeListener(/* anonymous class already generated */);
+    }
+}
