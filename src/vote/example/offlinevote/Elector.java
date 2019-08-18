@@ -33,7 +33,7 @@ public class Elector extends Activity {
             this.et[this.j] = new EditText(getBaseContext());
             this.et[this.j].setId(this.j);
             this.et[this.j].setHint("enter leader name  " + this.j);
-            this.et[this.j].setPadding(20, 20, 20, 20);
+            this.et[this.j].setPadding(30, 30, 30, 30);
             this.l1.addView(this.et[this.j]);
             this.j++;
         }

@@ -95,7 +95,7 @@ public class Count extends Activity {
                     tt[i] = new TextView(this);
                     tt[i].setId(i);
                     tt[i].setText(new StringBuilder(String.valueOf(this.entryArray[i + 1])).append("      ").append(this.partyArray[i + 1]).toString());
-                    tt[i].setPadding(20, 20, 20, 20);
+                    tt[i].setPadding(30, 30, 30, 30);
                     this.l1.addView(tt[i]);
                 }
                 b = new Button(this);
@@ -159,7 +159,7 @@ public class Count extends Activity {
             tt[i] = new TextView(this);
             tt[i].setId(i);
             tt[i].setText(new StringBuilder(String.valueOf(this.entryArray[i + 1])).append("      ").append(this.partyArray[i + 1]).toString());
-            tt[i].setPadding(20, 20, 20, 20);
+            tt[i].setPadding(30, 30,30, 30);
             this.l1.addView(tt[i]);
         }
         b = new Button(this);
