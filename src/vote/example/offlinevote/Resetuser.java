@@ -79,5 +79,25 @@ public class Resetuser extends Activity {
                 }
             }
         });
+		  this.b2.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+                int k;
+                for (k = 0 + 3; k < Resetuser.this.loginArray.length; k += 3) {
+                    int y = Integer.parseInt(Resetuser.this.loginArray[k]);
+                    Resetuser.this.loginArray[k] = Integer.toString(0);
+                }
+                try {
+                    OutputStreamWriter osw = new OutputStreamWriter(Resetuser.this.openFileOutput("login.txt", 0));
+                    for (k = 1; k < Resetuser.this.loginArray.length; k++) {
+                        osw.write("," + Resetuser.this.loginArray[k]);
+                    }
+                    osw.flush();
+                    osw.close();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+                Toast.makeText(Resetuser.this.getBaseContext(), "Done!", 1).show();
+            }
+        });
     }
 }
