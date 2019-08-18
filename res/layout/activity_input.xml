@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/l1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <EditText 
+		android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
+		android:id="@+id/e1" 
+		android:focusable="true" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp" 
+		android:hint="Enter the number of Leader"
+		android:inputType="number|numberSigned|numberDecimal|numberPassword|phone" />
+        <Button 
+		android:textSize="20sp"
+		android:textColor="#ffffff"
+		android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end" 
+		android:id="@+id/b1" 
+		android:background="#1e90ff" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_marginTop="20dp" 
+		android:text="ok" 
+		android:width="250dp" />
+    </LinearLayout>
+</ScrollView>
