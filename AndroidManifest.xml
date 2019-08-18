@@ -20,5 +20,6 @@
         <activity android:label="@string/title_activity_setting" android:name="vote.example.offlinevote.Setting" />
         <activity android:label="@string/title_activity_reset_password" android:name="vote.example.offlinevote.ResetPassword" />
         <activity android:label="@string/title_activity_signup" android:name="vote.example.offlinevote.Signup" />
+		<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     </application>
 </manifest>
