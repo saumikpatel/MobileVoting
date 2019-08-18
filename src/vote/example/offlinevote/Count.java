@@ -89,6 +89,25 @@ public class Count extends Activity {
                 } else {
                     Toast.makeText(getBaseContext(), "File not loaded successfully!", 1).show();
                 }
+				this.z = Integer.parseInt(this.n);
+                tt = new TextView[this.z];
+                for (i = 0; i < this.z; i++) {
+                    tt[i] = new TextView(this);
+                    tt[i].setId(i);
+                    tt[i].setText(new StringBuilder(String.valueOf(this.entryArray[i + 1])).append("      ").append(this.partyArray[i + 1]).toString());
+                    tt[i].setPadding(20, 20, 20, 20);
+                    this.l1.addView(tt[i]);
+                }
+                b = new Button(this);
+                b.setText("Settings");
+                b.setId(5);
+                this.l1.addView(b);
+                k = b.getId();
+                b.setOnClickListener(new OnClickListener() {
+                    public void onClick(View arg0) {
+                        Count.this.startActivity(new Intent(Count.this, Setting.class));
+                    }
+                });
                 
             }
         } catch (IOException e) {
@@ -134,6 +153,20 @@ public class Count extends Activity {
         } catch (IOException e22) {
             e22.printStackTrace();
         }
-        
+        this.z = Integer.parseInt(this.n);
+        tt = new TextView[this.z];
+        for (i = 0; i < this.z; i++) {
+            tt[i] = new TextView(this);
+            tt[i].setId(i);
+            tt[i].setText(new StringBuilder(String.valueOf(this.entryArray[i + 1])).append("      ").append(this.partyArray[i + 1]).toString());
+            tt[i].setPadding(20, 20, 20, 20);
+            this.l1.addView(tt[i]);
+        }
+        b = new Button(this);
+        b.setText("Settings");
+        b.setId(5);
+        this.l1.addView(b);
+        k = b.getId();
+        b.setOnClickListener(/* anonymous class already generated */);
     }
 }
