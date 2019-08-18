@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <menu name="adduser">res/menu/adduser.xml</menu>
-   
+    <menu name="admin">res/menu/admin.xml</menu>
+    <menu name="count">res/menu/count.xml</menu>
+    <menu name="elector">res/menu/elector.xml</menu>
+    <menu name="end">res/menu/end.xml</menu>
+    <menu name="input">res/menu/input.xml</menu>
     <menu name="main">res/menu/main.xml</menu>
-	<menu name="admin">res/menu/admin.xml</menu>
-	    <menu name="signup">res/menu/signup.xml</menu>
-		  <menu name="resetuser">res/menu/resetuser.xml</menu>
-		   <menu name="vote">res/menu/vote.xml</menu>
-    
+    <menu name="party">res/menu/party.xml</menu>
+    <menu name="reset_password">res/menu/reset_password.xml</menu>
+    <menu name="resetuser">res/menu/resetuser.xml</menu>
+    <menu name="setting">res/menu/setting.xml</menu>
+    <menu name="signup">res/menu/signup.xml</menu>
+    <menu name="vote">res/menu/vote.xml</menu>
 </resources>

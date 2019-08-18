@@ -8,9 +8,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-         <activity android:label="@string/title_activity_admin" android:name="vote.example.offlinevote.Admin" />
-		  <activity android:label="@string/title_activity_signup" android:name="vote.example.offlinevote.Signup" />
-		   <activity android:label="@string/title_activity_reset_password" android:name="vote.example.offlinevote.ResetPassword" />
-		       <activity android:label="@string/title_activity_vote" android:name="vote.example.offlinevote.Vote" />
+        <activity android:label="@string/title_activity_admin" android:name="vote.example.offlinevote.Admin" />
+        <activity android:label="@string/title_activity_vote" android:name="vote.example.offlinevote.Vote" />
+        <activity android:label="@string/title_activity_end" android:name="vote.example.offlinevote.End" />
+        <activity android:label="@string/title_activity_count" android:name="vote.example.offlinevote.Count" />
+        <activity android:label="@string/title_activity_resetuser" android:name="vote.example.offlinevote.Resetuser" />
+        <activity android:label="@string/title_activity_adduser" android:name="vote.example.offlinevote.Adduser" />
+        <activity android:label="@string/title_activity_party" android:name="vote.example.offlinevote.Party" />
+        <activity android:label="@string/title_activity_input" android:name="vote.example.offlinevote.Input" />
+        <activity android:label="@string/title_activity_elector" android:name="vote.example.offlinevote.Elector" />
+        <activity android:label="@string/title_activity_setting" android:name="vote.example.offlinevote.Setting" />
+        <activity android:label="@string/title_activity_reset_password" android:name="vote.example.offlinevote.ResetPassword" />
+        <activity android:label="@string/title_activity_signup" android:name="vote.example.offlinevote.Signup" />
     </application>
 </manifest>

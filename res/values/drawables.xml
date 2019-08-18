@@ -5,5 +5,9 @@
     <drawable name="ic_launcher">res/drawable-hdpi/ic_launcher.png</drawable>
     <drawable name="ic_launcher">res/drawable-xhdpi/ic_launcher.png</drawable>
     <drawable name="ic_launcher">res/drawable-xxhdpi/ic_launcher.png</drawable>
-  
+    <drawable name="reset">res/drawable-hdpi/reset.png</drawable>
+    <drawable name="sleader">res/drawable-hdpi/sleader.png</drawable>
+    <drawable name="vote">res/drawable-hdpi/vote.png</drawable>
+    <drawable name="votes">res/drawable-hdpi/votes.png</drawable>
+    <drawable name="white">res/drawable-hdpi/white.png</drawable>
 </resources>
