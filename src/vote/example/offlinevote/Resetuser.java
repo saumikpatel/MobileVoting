@@ -48,6 +48,36 @@ public class Resetuser extends Activity {
             e.printStackTrace();
         }
    
-        
+           this.b1.setOnClickListener(new OnClickListener() {
+            public void onClick(View arg0) {
+                int j;
+                String lid = Resetuser.this.e1.getText().toString();
+                String aid = Resetuser.this.e2.getText().toString();
+                String z = "0";
+                if (!aid.equals("") && !lid.equals("")) {
+                    j = 0;
+                    while (j < Resetuser.this.loginArray.length) {
+                        if (aid.equals(Resetuser.this.loginArray[j + 2]) && lid.equals(Resetuser.this.loginArray[j + 1])) {
+                            Resetuser.this.loginArray[j + 3] = z;
+                            Toast.makeText(Resetuser.this.getBaseContext(), "Done!", 1).show();
+                            break;
+                        }
+                        j += 3;
+                    }
+                } else {
+                    Toast.makeText(Resetuser.this.getBaseContext(), "Enter Login-ID and Adhar No.", 1).show();
+                }
+                try {
+                    OutputStreamWriter osw = new OutputStreamWriter(Resetuser.this.openFileOutput("login.txt", 0));
+                    for (j = 1; j < Resetuser.this.loginArray.length; j++) {
+                        osw.write("," + Resetuser.this.loginArray[j]);
+                    }
+                    osw.flush();
+                    osw.close();
+                } catch (IOException ioe) {
+                    ioe.printStackTrace();
+                }
+            }
+        });
     }
 }
