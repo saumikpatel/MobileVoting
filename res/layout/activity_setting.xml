@@ -11,25 +11,25 @@
 		android:id="@+id/i1" 
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content" 
-		android:layout_marginTop="20dp" 
+		android:layout_marginTop="30dp" 
 		android:src="@drawable/add" />
         <ImageView 
 		android:id="@+id/i2"
 		android:layout_width="match_parent" 
 		android:layout_height="wrap_content" 
-		android:layout_marginTop="20dp"
-		android:src="@drawable/reset" />
+		android:layout_marginTop="30dp"
+		android:src="@drawable/reset"/>
         <ImageView 
 		android:id="@+id/i3" 
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content" 
-		android:layout_marginTop="20dp"
-		android:src="@drawable/vote" />
+		android:layout_marginTop="30dp"
+		android:src="@drawable/vote"/>
         <ImageView 
 		android:id="@+id/i4" 
 		android:layout_width="match_parent" 
 		android:layout_height="wrap_content"
-		android:layout_marginTop="20dp" 
+		android:layout_marginTop="30dp" 
 		android:src="@drawable/sleader" />
     </LinearLayout>
 </ScrollView>

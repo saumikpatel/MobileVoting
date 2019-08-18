@@ -12,15 +12,15 @@
 	android:id="@+id/et3"
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content" 
-	android:layout_marginTop="20dp" 
+	android:layout_marginTop="30dp" 
 	android:hint="enter admin id" />
     <EditText 
 	android:layout_gravity="top|bottom|left|right|center_vertical|fill_vertical|center_horizontal|fill_horizontal|center|fill|start|end"
 	android:id="@+id/et4" 
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content" 
-	android:layout_marginTop="20dp"
-	android:hint="enter your passwod" 
+	android:layout_marginTop="30dp"
+	android:hint="enter your password" 
 	android:inputType="text|textCapCharacters|textCapWords|textCapSentences|textAutoCorrect|textAutoComplete|textMultiLine|textImeMultiLine|textNoSuggestions|textUri|textEmailAddress|textEmailSubject|textShortMessage|textLongMessage|textPersonName|textPostalAddress|textPassword|textVisiblePassword|textWebEditText|textFilter|textPhonetic|textWebEmailAddress|textWebPassword|phone" />
     <Button
 	android:textSize="20sp" 
@@ -36,7 +36,7 @@
     <TextView android:id="@+id/t1" 
 	android:layout_width="wrap_content" 
 	android:layout_height="wrap_content" 
-	android:layout_marginLeft="20dp" 
+	android:layout_marginLeft="30dp" 
 	android:layout_marginTop="5dp" 
 	android:text="Forgot Password?" />
     <Button android:textSize="20sp" 
